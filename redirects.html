@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain market</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&family=Inter:wght@400;700&family=Manrope:wght@500&family=Noto+Sans:wght@500&family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="nav-container">
+        <div class="container">
+            <nav class="nav-wrapper">
+                <ul>
+                    <li><a class="nav-item nav-logo" href="index.html"><img src="image/logo.svg" alt="">Сервис <br> Октябрьская</a></li>
+                    <li><a class="nav-item" href="index.html">Главная</a></li>
+                    <li><a class="nav-item this-page" href="redirects.html">Редиректы</a></li>
+                    <li><a class="nav-item" href="blog.html">Блог</a></li>
+                    <li><a class="nav-item" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="main redirects">
+        <div class="container">
+            <div class="main__card-wrapper">
+                <div class="main__card">
+
+                    <h1 class="main__title">Редиректы</h1>
+                    <div class="line"></div>
+
+                    <div class="card-wrapper">
+                            <h2 class="card-col__title">Виды редиректов</h2>
+                            <p class="article">Редирект для домена — перенаправление с одного адреса (домена) на другой. Подробнее об этой функции на DomainParking.ru читайте в <a href="#" class="article-link">статье</a>.</p>
+                            <p class="article"><em>Существует 2 типа редиректа.</em></p>
+                            <p class="article"><strong>301-й редирект</strong> (код ответа браузера 301 moved permanently) - расценивается поисковыми системами как постоянный редирект и происходит "склеивание" доменов, и все показатели "склеенных" доменов для поисковых систем объединяются.</p>
+                            <p class="article">Доступен 301-й редирект исключительно на шаблонах "Пользовательский редирект".</p>
+                            <p class="article"><strong>302-й редирект</strong> (код ответа браузера 302 temporary redirect) - временное перенаправление и "склеивание" не происходит. Таким образом ваш домен поисковики воспринимают как самостоятельную единицу, и, в случае если вы решите сделать на нем сайт или продать, то вам не придется ждать пока поисковики "расклеят" домены, что может длиться более месяца.</p>
+                            <p class="article">Доступен 302-й редирект как на на шаблоне "Базовый редирект", так и на шаблонах "Пользовательский редирект".</p>
+                            <p class="article">Исходя из этого приходим к выводу, что 302 редирект не подойдет для следующих ситуаций:
+                                <ul class="article-list">
+                                    <li>склейка домена с сайтом для передачи ему SEO параметров;</li>
+                                    <li>перенаправление пользователей со старого домена на новый.</li>
+                                </ul>
+                            </p>
+
+                            <h2 class="card-col__title">Упрощенное добавление редиректа</h2>
+                            <p class="article">Теперь редиректы можно добавить массово, указав список доменов и одну общую цель для всех добавляемых доменов.</p>
+                            <img src="image/redirects/redir1.png" alt="" class="article-image">
+                            <p class="article">При необходимости, вы можете указать категорию или иной шаблон из пользовательских редиректов, а также загрузить список доменов с настройками из файла.</p>
+                            <h2 class="card-col__title">Добавление редиректа из файла</h2>
+                            <p class="article">Теперь редиректы можно добавить из текстового файла в формате обычных шаблонов:</p>
+                            <p class="article">site1.ru::rd_0:0:: <a class="article-link" href="http://site2.ru ">http://site2.ru </a> - для базового редиректа (rd_0)</p>
+                            <p class="article">site1.ru::rd_7:0:: <a class="article-link" href="http://site22.ru ">http://site22.ru </a> - для пользовательского редиректа (rd_7) номер можно узнать в адресной строке браузера:</p>
+                            <img src="image/redirects/redir2.png" alt="" class="article-image">
+                            <p class="article">Или сделав бекап доменов в <a class="article-link" href="http://site22.ru ">Настройках аккаунта</a> и скачав его в <a class="article-link" href="http://site22.ru ">Отчетах</a>.</p>
+                            <p class="article">Поддерживается так же упрощенный формат, который был доступен в старой версии редиректов:<br>
+                                <em>site1.ru|site2.ru</em><br>
+                                где site1.ru - домен с которого будет идти редирект, site2.ru - цель редиректа (домен, на который будем перенаправлять), "|" - разделитель.<br>
+                            </p>
+                            <p class="article">Например:</p>
+                            <img src="image/redirects/redir3.jpg" alt="" class="article-image">
+                            <p class="article">После добавления записи смените DNS-серверы перенаправляемого домена (site1.ru) на новые: <b>ns1.domainparking.ru и ns2.domainparking.ru.</b></p>
+                            <p class="article">Готово! Через 2-6 часов парковка будет перенаправлять посетителей на целевой сайт.</p>
+                            <h2 class="card-col__title">Как настроить шаблон «Базовый редирект»</h2>
+                            <p class="article">Шаблон «Базовый редирект» подойдет в случаях, когда нужно, чтобы один/несколько доменов вели на другой целевой адрес. Мы сделали эту процедуру проще. Теперь редиректы на один адрес можно настраивать массово</p>
+                            <p class="article">Чтобы настроить шаблон «Базовый редирект»:</p>
+                            <ol class="article-list">
+                                <li>Авторизуйтесь в <a class="article-link" href="https://domainparking.ru/cabinet">личном кабинете</a>.</li>
+                                <li>Перейдите в раздел <a class="article-link" href="https://domainparking.ru/options">Настройки</a>.</li>
+                                <li>Введите целевой адрес с https:// в графе <b>URL для шаблона «Редирект»</b>:<img class="article-image" src="image/redirects/redir4.png" alt="" width="100%">
+                            <span>По умолчанию редирект настроен на адрес&nbsp;<a class="article-link" href="https://domainparking.ru"><b>https://domainparking.ru</b></a>.</span></li>
+                                <li>Нажмите <b>Сохранить</b> ниже.</li>
+                            </ol>
+                            <p class="article">Готово! Этот редирект будет использоваться в качестве шаблона</p>
+                            <h2 class="card-col__title">Базовый редирект</h2>
+                            <p class="article">Далее вам нужно подключить редирект к одному/нескольким доменам. Для этого:</p>
+                            <ol class="article-list">
+                                <li>Перейдите в раздел <a class="article-link" href="https://domainparking.ru/domain">Припаркованные домены</a>.</li>
+                                <li>В строке домена/доменов, с которых должно идти перенаправление на целевой адрес в столбце «Шаблон» установите <b>Базовый редирект</b>:<img class="article-image" src="image/redirects/redir5.png" alt=""></li>
+                            </ol>
+                            <p class="article">Готово! Выбранные домены будут вести на адрес, установленный в: <b>URL для шаблона.</b></p>
+                            <p class="article">Все домены c редиректами отображаются во вкладке</p>
+                            <h2 class="card-col__title">Редиректы:</h2>
+                            <img src="image/redirects/redir6.png" alt="" class="article-image">
+                            <p class="article">Для каждого домена на базовом редиректе можно добавить индивидуальный URL. Если домен переключить на другой шаблон, этот URL будет использоваться и в шаблоне SALE (как ссылка на второй кнопке шаблона) и в шаблоне iFrame.</p>
+                            <h2 class="card-col__title">Как настроить пользовательский шаблон редиректов?</h2>
+                            <p class="article">Пользовательский шаблон редиректов подойдет для более гибкой настройки редиректов. Создав пользовательский шаблон, вы сможете настроить типы редиректа (301 — постоянный или 302 — временный) и несколько адресов, который поочередно будут открываться при переходе на домен. Также вы сможете установить приоритеты для них.</p>
+                            <p class="article">Пользовательские шаблоны можно использовать для А/Б-тестирований.</p>
+                            <p class="article">Чтобы создать пользовательский шаблон:</p>
+                            <ol class="article-list">
+                                <li>Перейдите в новый раздел <a class="article-link" href="https://domainparking.ru/redirect/group">Списки URL</a>.</li>
+                                <li>Нажмите <b>Добавить “Список перенаправлений”</b>:<img class="article-image" src="image/redirects/redir7.png" alt=""></li>
+                                <li>Введите название шаблона, поставьте галочку напротив <b>Навечно</b>, если хотите сделать постоянный редирект (301) или снимите галочку, если хотите настроить временный редирект (302). Временный редирект подходит для случаев, когда вы устанавливаете несколько целевых сайтов для перенаправления. Введите несколько URL-адрес с <b>https://</b>, выставьте приоритет (чем больше число, тем чаще будет открываться именно этот адрес) и нажмите <b>Добавить:<img class="article-image" src="image/redirects/redir8.png" alt=""></b></li>
+                            </ol>
+                           <p class="article">Готово! Шаблон редиректа появится в разделе. Теперь вы можете подключить его к доменам в разделе <a class="article-link" href="https://domainparking.ru/domain">Припаркованные домены</a>:<img class="article-image" src="image/redirects/redir8.png" alt=""></p>
+                           <p class="article">Пользовательские редиректы можно использовать для того, чтобы направить отдельную группу доменов на один URL и собирать отдельную статистику по этой группе доменов в разделе Статистика/Шаблоны. Также они используются для быстрой смены URL.</p>
+                           <h2 class="card-col__title">Добавление доменов с редиректами в Магазин доменов&nbsp;</h2>
+                           <ol class="article-list">
+                                <li>Перейдите в раздел <a class="article-link" href="https://domainparking.ru/domain">Припаркованные домены</a>.</li>
+                                <li>Перейдите в настройки нужного домена.</li>
+                                <li>В блоке <b>Шаблон</b> установите «Базовый редирект» и нажмите <b>Сохранить</b>:<img class="article-image" src="image/redirects/redir9.png" alt=""></li>
+                                <span>Здесь же вы можете установить другой целевой URL для отдельного домена.</span>
+                                <li>Левее поставьте галочку напротив пункта <b>Участвует в продаже. </b>Здесь же вы можете добавить описание, заголовок и цену доменов с редиректами. Сохраните изменения:<img class="article-image" src="image/redirects/redir10.png" alt=""></li>
+                           </ol>
+                           <p class="article">Готово! Вы выставили домен с редиректом в Магазине доменов.</p>
+                           <h2 class="card-col__title">Как узнать статистику редиректов</h2>
+                           <p class="article">Посещения по редиректам отображается в разделе <a class="article-link" href="https://domainparking.ru/stat">Статистика</a> в одноименной вкладке:<img class="article-image" src="image/redirects/redir11.png" alt=""></p>
+                           <p class="article">Также вы можете перейти во вкладку <b>Шаблоны </b>и посмотреть посещения по конкретному шаблону редиректов:
+                            <img class="article-image" src="image/redirects/redir12.png" alt=""></p>
+                    </div>
+                    
+            </div>
+            
+            </div>
+            <aside class="sidebar">
+                <h2 class="main__title">Последние записи:</h2>
+                <div class="line"></div>
+                <ul>
+                    <li>
+                        <a href="blog/icann-razreshila-povyshat-tseny-na-domeny-com.html">
+                        <div class="title-news">11.04.2020</div>
+                        <span class="card-col__title">ICANN разрешила повышать цены на домены .COM</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blog/registratory-vvodyat-zapret-na-koronavirusnye-domeny.html">
+                        <div class="title-news">08.04.2020</div>
+                        <span class="card-col__title">Регистраторы вводят запрет на «коронавирусные» домены</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blog/ssha-blokiruet-domeny-svyazannye-s-koronavirusom.html">
+                        <div class="title-news">03.04.2020</div>
+                        <span class="card-col__title">США блокирует домены, связанные с коронавирусом</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </section>
+
+    <footer class="nav-container">
+        <div class="container">
+            <nav class="nav-wrapper">
+                <a class="nav-item nav-logo" href="index.html"><img src="image/logo.svg" alt=""></a>
+                <ul>
+                    <li><a class="nav-item" href="index.html">Главная</a></li>
+                    <li><a class="nav-item" href="redirects.html">Редиректы</a></li>
+                    <li><a class="nav-item" href="blog.html">Блог</a></li>
+                    <li><a class="nav-item" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="copyright">© 2015-2023 domainparking.ru</div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
