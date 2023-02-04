@@ -78,7 +78,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    min-height: 600px;
+    min-height: 350px;
     margin-bottom: 80px;
     img {
         object-fit: cover;
@@ -97,7 +97,7 @@
 }
 
 .promo {
-    height: 600px;
+    height: 350px;
     margin-bottom: 80px;
 }
 
@@ -110,7 +110,7 @@
     line-height: 35px;
     text-transform: uppercase;
     color: $white;
-    top: 450px;
+    top: 250px;
     margin-left: 20px;
 }
 
@@ -137,9 +137,6 @@
     height: fit-content;
     margin-right: 15px;
     padding-top: 50px;
-    .main__title {
-        // padding-bottom: 20px;
-    }
 }
 
 .main__card-wrapper {
