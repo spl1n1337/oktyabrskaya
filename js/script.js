@@ -24,7 +24,7 @@ setInterval(() => {
     }
   });
   currentIndex = (currentIndex + 1) % elements.length;
-}, 3000);
+}, 4500);
 
 const burgerMenu = document.querySelector(".burger-menu");
 
