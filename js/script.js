@@ -31,7 +31,7 @@ const burgerMenu = document.querySelector(".burger-menu");
 burgerMenu.addEventListener("click", function() {
   this.classList.toggle("active");
   if(document.querySelector(".burger-menu").classList.contains('active')) {
-    document.querySelector('.nav-mobile').style.height = '100vh';
+    document.querySelector('.nav-mobile').style.height = '94vh';
   } else {
     document.querySelector('.nav-mobile').style.height = '0vh';
   }
