@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.contacts').classList.add('_sending');
       }
     } else {
-      alert("Заполните обязательные поля");
+      // alert("Заполните обязательные поля");
     }
   }
 
