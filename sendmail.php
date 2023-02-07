@@ -5,19 +5,19 @@ use PHPMailer\PHPMailer\Exception;
 require 'phpmailer/src/Exception.php';
 require 'phpmailer/src/ PHPMailer.php';
 
-Smail = new PHPMailer (true);
-Smail->CharSet = 'UTF-8';
-Smail->setLanguage ('ru', "phpmailer/language/");
-Smail->IsHTML(true);
+$mail = new PHPMailer (true);
+$mail->CharSet = 'UTF-8';
+$mail->setLanguage ('ru', "phpmailer/language/");
+$mail->IsHTML(true);
 
 //От кого письмо
-Smail->setFrom("hardworking1337@gmail.com", "Название вашей компании или сайта");
+$mail->setFrom("hardworking1337@gmail.com", "Название вашей компании или сайта");
 
 // Кому отправить: укажите вашу почту
-Smail->addAddress('panov1337.lp@gmail.com');
+$mail->addAddress('panov1337.lp@gmail.com');
 
 // Тема письма
-Smail->Subject = 'Новая заявка с вашего сайта';
+$mail->Subject = 'Новая заявка с вашего сайта';
 
 //Тело письма
 $body = '<h1>Заголовок письма!</h1>';
