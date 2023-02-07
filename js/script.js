@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if(error === 0) {
       document.querySelector('.contacts').classList.add('_sending');
-      let response = await fetch('sendmail.php', {
+      let response = await fetch('https://oktyabrskaya.vercel.app/sendmail.php', {
         method: 'POST',
         body: formData
       });
