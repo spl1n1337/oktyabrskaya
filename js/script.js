@@ -37,6 +37,27 @@ document.addEventListener('DOMContentLoaded', function() {
     e.preventDefault();
 
     let error = formValidate(form);
+
+    let formData = new FormData(form);
+
+    if(error === 0) {
+      document.querySelector('.contacts').classList.add('_sending');
+      let response = await fetch('sednmail.php', {
+        method: 'POST',
+        body: formData
+      });
+      if(response.ok) {
+        let result = await response.json();
+        alert(result.message);
+        form.reset();
+        document.querySelector('.contacts').classList.add('_sending');
+      } else {
+        alert("Ошибка");
+        document.querySelector('.contacts').classList.add('_sending');
+      }
+    } else {
+      alert("Заполните обязательные поля");
+    }
   }
 
   function formValidate(form) {
@@ -52,8 +73,12 @@ document.addEventListener('DOMContentLoaded', function() {
           formAddError(input);
           error++;
         }
+      }if(input.value.trim() === '') {
+        formAddError(input);
+        error++;
       }
     }
+    return error;
   }
 
   function formAddError(input) {
