@@ -50,10 +50,10 @@ document.addEventListener('DOMContentLoaded', function() {
         let result = await response.json();
         alert(result.message);
         form.reset();
-        document.querySelector('.contacts').classList.add('_sending');
+        document.querySelector('.contacts').classList.remove('_sending');
       } else {
         alert("Ошибка");
-        document.querySelector('.contacts').classList.add('_sending');
+        document.querySelector('.contacts').classList.remove('_sending');
       }
     } else {
       // alert("Заполните обязательные поля");

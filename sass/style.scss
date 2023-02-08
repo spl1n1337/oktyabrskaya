@@ -169,6 +169,19 @@
 }
 .card-wrapper {
     display: flex;
+    .card__flot-block {
+        width: 100%;
+    }
+    .float-block__img {
+        width: 50%;
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        img {
+            width: 100%;
+        }
+    }
+    .card__flot-text {}
 }
 .blog .card-wrapper {
     flex-direction: column;
@@ -376,6 +389,25 @@ footer {
             margin-top: 0;
             margin-bottom: 10px;
             width: 410px;
+        }
+    }
+    .blog__subtitle {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .blog__list {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        li {
+            list-style-type: disc;
+        }
+        &.circle li {
+            list-style-type: circle;
+        }
+        &.square li {
+            list-style-type: square;
         }
     }
 }
@@ -640,6 +672,13 @@ footer {
     .promo {
         .promo__title {
             font-size: 40px;
+        }
+    }
+    .card__flot-block {
+        display: flex;
+        flex-direction: column;
+        .float-block__img {
+            width: 100%;
         }
     }
 }
